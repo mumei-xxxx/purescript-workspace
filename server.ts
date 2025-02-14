@@ -10,4 +10,15 @@ import { staticPlugin } from "@elysiajs/static";
  */
 // export default new Router().get("/*", stream("./public"));
 // .get('/', () => new Response('Hi'))
-new Elysia().use(staticPlugin()).listen(8000);
+new Elysia()
+  .use(
+    staticPlugin({
+      // public ディレクトリを静的ファイルの配信元として設定
+      assets: "public",
+      // ルートパスへのアクセスを public ディレクトリにマッピング
+      prefix: "/",
+    })
+  )
+  .listen(8000, () => {
+    console.log("🦊 Server is running at http://localhost:8000");
+  });

@@ -6,10 +6,10 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@elysiajs/static": "1.1.2",
+    "@elysiajs/static": "^1.2.0",
     "@stricjs/router": "^5.0.6",
     "@stricjs/utils": "^2.0.7",
     "esbuild": "0.24.0",

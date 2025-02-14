@@ -1,6 +1,9 @@
 package:
   name: workspace
   dependencies:
+    - affjax
+    - argonaut-codecs
+    - argonaut-core
     - console
     - effect
     - jelly

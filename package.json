@@ -2,6 +2,10 @@
   "name": "purescript-workspace",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "esbuild index.ts --bundle --outfile=index.js",
+    "dev": "bun run server.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
